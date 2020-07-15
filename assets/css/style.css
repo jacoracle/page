@@ -2087,4 +2087,114 @@ ul.small-menu-ul {
   background-color: #f6f6f6;
 }
 
+.hide-title {
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+
+.clearfix {
+  display: table;
+  clear: both;
+}
+
+.container-insdustry {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  position: relative;
+  width: 96%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab_menu {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tab_menu_item {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.tab_menu_item_link {
+  position: relative;
+  width: auto;
+  height: auto;
+  border: 0;
+  padding: 9px 20px 11px;
+  border-radius: 30px;
+  color: #1e275a;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 18px;
+}
+.tab_menu_item_link:hover, .tab_menu_item_link.is-active {
+  background-color: #c9cfd2;
+  border-radius: 30px;
+}
+
+.tab_container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+.tab_content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.tab_content.is-active {
+  display: flex;
+  justify-content: space-around;
+  animation: fade 0.5s ease;
+}
+
+.text-tab {
+  position: relative;
+  width: 60%;
+  height: auto;
+  min-height: 100px;
+}
+.text-tab p {
+  font-size: 18px;
+}
+
+.img-tab {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-image: url("../img/vr2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

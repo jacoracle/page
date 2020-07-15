@@ -1,37 +1,34 @@
-// $(window).on("load",function() {
-//   $(window).scroll(function() {
-//     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-//     $(".fade").each(function() {
-//
-//       var objectBottom = $(this).offset().top + $(this).outerHeight();
-//
-//
-//       if (objectBottom < windowBottom) {
-//         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-//       } else {
-//         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-//       }
-//     });
-//   }).scroll();
-// });
-$(window).on("load",function() {
-  function fade(pageLoad) {
-    var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
-    var min=0.3, max=0.7, threshold=0.01;
+(function() {
+	'use strict';
 
-    $(".fade").each(function() {
-      /* Check the location of each desired element */
-      var objectHeight=$(this).outerHeight(), objectTop=$(this).offset().top, objectBottom=$(this).offset().top+objectHeight;
+	var tabMenus,
+			tabContents;
+	// document.querySelectorAllでマッチしたclass名を持つ要素を取得
+	tabMenus = document.querySelectorAll('.tab_menu_item_link');
+	tabContents = document.querySelectorAll('.tab_content');
 
-      /* Fade element in/out based on its visible percentage */
-      if (objectTop < windowTop) {
-        if (objectBottom > windowTop) {$(this).fadeTo(0,min+((max-min)*((objectBottom-windowTop)/objectHeight)));}
-        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
-      } else if (objectBottom > windowBottom) {
-        if (objectTop < windowBottom) {$(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
-        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
-      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);}
-    });
-  } fade(true); //fade elements on page-load
-  $(window).scroll(function(){fade(false);}); //fade elements on scroll
-});
+	// 取得した要素は配列のようなオブジェクトを保持しているため、
+	// 要素の数の分だけループ処理をして値を取り出す
+	for (var i = 0; i < tabMenus.length; i++) {
+		// タブメニュークリック時
+		tabMenus[i].addEventListener('click', function(e) {
+			// リンクの無効化
+			e.preventDefault();
+
+			// すべてのタブメニューを非アクティブにする
+			for (var i = 0; i < tabMenus.length; i++) {
+				tabMenus[i].className = 'tab_menu_item_link';
+			}
+			// クリックしたタブメニューをアクティブにする
+			this.className = 'tab_menu_item_link is-active';
+
+			// タブコンテンツを非アクティブにする
+			for (var i = 0; i < tabContents.length; i++) {
+				tabContents[i].className = 'tab_content';
+			}
+			// タブメニューdata属性値と等しいid値を持つタブコンテンツを表示させる
+			document.getElementById(this.dataset.id).className = 'tab_content is-active';
+
+		});
+	}
+}());
