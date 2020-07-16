@@ -1103,7 +1103,6 @@ ul.small-menu-ul {
   position: relative;
   width: 94%;
   max-width: 1200px;
-  max-width: 1300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1353,7 +1352,6 @@ ul.small-menu-ul {
   position: relative;
   width: 94%;
   max-width: 1200px;
-  max-width: 1300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2139,10 +2137,11 @@ ul.small-menu-ul {
   border: 0;
   padding: 9px 20px 11px;
   border-radius: 30px;
-  color: #1e275a;
+  color: #283d8e;
   transition: 0.3s;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 600;
 }
 .tab_menu_item_link:hover, .tab_menu_item_link.is-active {
   background-color: #c9cfd2;
@@ -2195,6 +2194,71 @@ ul.small-menu-ul {
   to {
     opacity: 1;
   }
+}
+.row-solutionO {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.row-solutionO .col-solutionO {
+  position: relative;
+  width: 96%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.row-solutionO .element-sO {
+  position: relative;
+  width: 30%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(91.14deg, #4966f7 0, #8253ff 122.55%);
+}
+.row-solutionO .element-sO .row-elementSO {
+  position: relative;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.row-solutionO .element-sO .row-elementSO h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.row-solutionO .element-sO .row-elementSO p {
+  font-size: 20px;
+  color: white;
+}
+.row-solutionO .element-sO .row-elementSO a {
+  position: absolute;
+  bottom: 40px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+.row-solutionO .element-sO .row-elementSO a:hover {
+  opacity: 1;
+}
+.row-solutionO .element-sO .row-elementSO a .icon {
+  color: white;
+  font-size: 26px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
