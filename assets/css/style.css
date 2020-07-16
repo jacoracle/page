@@ -410,7 +410,7 @@ strong {
   max-width: 1200px;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 @media (min-width: 0px) and (max-width: 680px) {
@@ -420,9 +420,10 @@ strong {
 }
 
 .logo-navbar {
-  position: relative;
+  position: absolute;
   width: 116px;
   height: 40px;
+  left: 0;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
@@ -547,9 +548,10 @@ ol.scroll-nav__list:after {
 }
 
 .switch-mode {
-  position: relative;
+  position: absolute;
   width: 36px;
   height: 36px;
+  right: 0;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
@@ -1982,45 +1984,6 @@ ul.small-menu-ul {
   background-color: #fff;
 }
 
-.row-l {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: #172244;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.row-l .item-l {
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
-
-#rl2 {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  background-color: #11182b;
-}
-#rl2 .item-l {
-  position: relative;
-  background-color: cyan;
-  width: 100px;
-  height: 100px;
-}
-
-#r3 {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-color: #0f235a;
-}
-
 .row-newStackInfo {
   position: relative;
   width: 100%;
@@ -2259,6 +2222,80 @@ ul.small-menu-ul {
   color: white;
   font-size: 26px;
   margin-left: 10px;
+}
+
+.mList {
+  position: relative;
+  width: 130px;
+  height: auto;
+}
+
+.menuList {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.menu-title {
+  display: block;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: lightslategray;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menuL-dropdown {
+  min-width: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+  transition: 0.3s;
+  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15);
+}
+.menuL-dropdown li a {
+  color: lightslategray;
+  text-decoration: none;
+}
+
+.menuList:not(:hover) > .menuL-dropdown {
+  z-index: 99;
+}
+
+.menuL-dropdown > * {
+  overflow: hidden;
+  height: 35px;
+  padding-left: 10px;
+  background: rgba(110, 110, 110, 0);
+  white-space: nowrap;
+  transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color;
+  color: lightslategray;
+  display: flex;
+  align-items: center;
+}
+
+.menuL-dropdown > *:hover {
+  background: rgba(110, 110, 110, 0.1);
+}
+
+.menuList:not(:hover) > .menuL-dropdown > * {
+  visibility: hidden;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  color: rgba(25, 25, 25, 0);
+  transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
+  z-index: 99;
 }
 
 /*# sourceMappingURL=style.css.map */
