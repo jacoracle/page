@@ -2105,10 +2105,15 @@ ul.small-menu-ul {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
+  background: transparent;
 }
-.tab_menu_item_link:hover, .tab_menu_item_link.is-active {
-  background-color: #c9cfd2;
+.tab_menu_item_link:hover {
+  color: #4966f7;
+}
+.tab_menu_item_link.is-active {
+  background: linear-gradient(91.14deg, #4966f7 0, #8253ff 122.55%);
   border-radius: 30px;
+  color: white;
 }
 
 .tab_container {
