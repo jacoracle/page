@@ -372,6 +372,11 @@ strong {
 .mt-60 {
   margin-top: 60px;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .mt-60 {
+    margin-top: 40px;
+  }
+}
 
 /* Navbar */
 .navbar {
@@ -1041,6 +1046,13 @@ ul.small-menu-ul {
 .row-title-single h3 {
   text-align: center;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-title-single h3 {
+    font-size: 23px;
+    width: 70%;
+    line-height: 30px;
+  }
+}
 
 .row-title-double {
   position: relative;
@@ -1290,6 +1302,12 @@ ul.small-menu-ul {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .block-clients {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+}
 
 .row-clients {
   position: relative;
@@ -1299,6 +1317,11 @@ ul.small-menu-ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-clients {
+    flex-direction: column;
+  }
 }
 
 .brand {
@@ -1317,8 +1340,12 @@ ul.small-menu-ul {
   .brand {
     width: 150px;
     height: 54px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .brand:nth-child(1) {
+    margin-top: 0;
   }
 }
 
@@ -1343,11 +1370,17 @@ ul.small-menu-ul {
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .block-text-image {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
 }
 
 .row-block-text-image {
@@ -1361,7 +1394,7 @@ ul.small-menu-ul {
 }
 @media (min-width: 0px) and (max-width: 680px) {
   .row-block-text-image {
-    width: 90%;
+    width: 86%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -1379,6 +1412,7 @@ ul.small-menu-ul {
 @media (min-width: 0px) and (max-width: 680px) {
   .block-ti-image {
     width: 100%;
+    margin-top: 30px;
   }
 }
 .block-ti-image img {
@@ -1414,10 +1448,10 @@ ul.small-menu-ul {
 }
 @media (min-width: 0px) and (max-width: 680px) {
   .edukai-square {
-    width: 100px;
-    height: 100px;
-    bottom: -50px;
-    right: 30px;
+    width: 60px;
+    height: 60px;
+    bottom: -30px;
+    right: 15px;
   }
 }
 
@@ -1429,16 +1463,22 @@ ul.small-menu-ul {
 @media (min-width: 0px) and (max-width: 680px) {
   .block-ti-text {
     width: 100%;
-    margin-top: 20px;
   }
 }
 .block-ti-text h3 {
   position: relative;
   width: 100%;
   max-width: 600px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  color: #2b2a35;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .block-ti-text h3 {
+    font-size: 28px;
+    text-align: center;
+  }
 }
 .block-ti-text p {
   font-size: 18px;
@@ -1448,6 +1488,23 @@ ul.small-menu-ul {
   .block-ti-text p {
     padding-right: 0;
   }
+}
+.block-ti-text a {
+  position: relative;
+  color: #334ac0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.block-ti-text a .icon {
+  color: #334ac0;
+  font-size: 26px;
+  margin-left: 10px;
 }
 
 .video-test {
@@ -1994,6 +2051,12 @@ ul.small-menu-ul {
   padding-top: 100px;
   padding-bottom: 20px;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-newStackInfo {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+}
 .row-newStackInfo h3 {
   position: relative;
   width: 80%;
@@ -2001,6 +2064,11 @@ ul.small-menu-ul {
   font-size: 48px;
   font-weight: 700;
   text-align: center;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-newStackInfo h3 {
+    font-size: 36px;
+  }
 }
 .row-newStackInfo p {
   position: relative;
@@ -2053,7 +2121,6 @@ ul.small-menu-ul {
   position: relative;
   width: 100%;
   height: 2px;
-  background-color: red;
 }
 
 .clearfix {
@@ -2067,6 +2134,11 @@ ul.small-menu-ul {
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .container-insdustry {
+    padding-bottom: 60px;
+  }
 }
 
 .tab {
@@ -2086,12 +2158,32 @@ ul.small-menu-ul {
   justify-content: flex-start;
   align-items: center;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .tab_menu {
+    width: 96%;
+    margin: 0 auto;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+  }
+}
 .tab_menu_item {
   position: relative;
   width: auto;
   height: auto;
   margin-left: 20px;
   cursor: pointer;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .tab_menu_item {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 .tab_menu_item_link {
   position: relative;
@@ -2106,6 +2198,12 @@ ul.small-menu-ul {
   font-size: 18px;
   font-weight: 600;
   background: transparent;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .tab_menu_item_link {
+    font-size: 15px;
+    padding: 6px 16px 8px;
+  }
 }
 .tab_menu_item_link:hover {
   color: #4966f7;
@@ -2134,6 +2232,13 @@ ul.small-menu-ul {
   justify-content: space-around;
   animation: fade 0.5s ease;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .tab_content.is-active {
+    flex-direction: column;
+    width: 92%;
+    margin: 0 auto;
+  }
+}
 
 .text-tab {
   position: relative;
@@ -2141,18 +2246,35 @@ ul.small-menu-ul {
   height: auto;
   min-height: 100px;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .text-tab {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 .text-tab p {
   font-size: 18px;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .text-tab p {
+    font-size: 16px;
+  }
 }
 
 .img-tab {
   position: relative;
   width: 250px;
-  height: 200px;
-  background-image: url("../img/vr2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  height: auto;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .img-tab {
+    width: 100%;
+  }
+}
+.img-tab img {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 @keyframes fade {
@@ -2172,6 +2294,11 @@ ul.small-menu-ul {
   padding-top: 20px;
   padding-bottom: 100px;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-solutionO {
+    padding-bottom: 60px;
+  }
+}
 .row-solutionO .col-solutionO {
   position: relative;
   width: 96%;
@@ -2179,6 +2306,12 @@ ul.small-menu-ul {
   height: auto;
   display: flex;
   justify-content: space-around;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-solutionO .col-solutionO {
+    flex-direction: column;
+    width: 82%;
+  }
 }
 .row-solutionO .element-sO {
   position: relative;
@@ -2188,6 +2321,16 @@ ul.small-menu-ul {
   justify-content: center;
   border-radius: 8px;
   background: linear-gradient(91.14deg, #4966f7 0, #8253ff 122.55%);
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-solutionO .element-sO {
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+  }
+  .row-solutionO .element-sO:nth-child(1) {
+    margin-top: 0;
+  }
 }
 .row-solutionO .element-sO .row-elementSO {
   position: relative;
@@ -2204,9 +2347,20 @@ ul.small-menu-ul {
   margin-bottom: 15px;
   text-align: center;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-solutionO .element-sO .row-elementSO h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
 .row-solutionO .element-sO .row-elementSO p {
   font-size: 20px;
   color: white;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-solutionO .element-sO .row-elementSO p {
+    font-size: 18px;
+  }
 }
 .row-solutionO .element-sO .row-elementSO a {
   position: absolute;
@@ -2219,6 +2373,12 @@ ul.small-menu-ul {
   transition: 0.3s;
   display: flex;
   align-items: center;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-solutionO .element-sO .row-elementSO a {
+    bottom: 25px;
+    opacity: 1;
+  }
 }
 .row-solutionO .element-sO .row-elementSO a:hover {
   opacity: 1;

@@ -116,6 +116,9 @@ strong {
 }
 .mt-60 {
   margin-top: 60px;
+  @include smartphone {
+    margin-top: 40px;
+  }
 }
 /* Navbar */
 .navbar {
@@ -744,6 +747,11 @@ ul.small-menu-ul {
   }
   h3 {
     text-align: center;
+    @include smartphone {
+      font-size: 23px;
+      width: 70%;
+      line-height: 30px;
+    }
   }
 }
 .row-title-double {
@@ -979,7 +987,10 @@ ul.small-menu-ul {
   align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
-  // background: linear-gradient(#f6f6f6 0,#fff 100%);
+  @include smartphone {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
 }
 .row-clients {
   position: relative;
@@ -989,6 +1000,9 @@ ul.small-menu-ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @include smartphone {
+    flex-direction: column;
+  }
 }
 .brand {
   position: relative;
@@ -1004,8 +1018,12 @@ ul.small-menu-ul {
   @include smartphone {
     width: 150px;
     height: 54px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
   }
 }
 .brand-1 {
@@ -1027,11 +1045,15 @@ ul.small-menu-ul {
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include smartphone {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
 }
 .row-block-text-image {
   position: relative;
@@ -1042,7 +1064,7 @@ ul.small-menu-ul {
   justify-content: space-between;
   align-items: center;
   @include smartphone {
-    width: 90%;
+    width: 86%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -1057,6 +1079,7 @@ ul.small-menu-ul {
   align-items: center;
   @include smartphone {
     width: 100%;
+    margin-top: 30px;
   }
   img {
     position: relative;
@@ -1089,10 +1112,10 @@ ul.small-menu-ul {
   background-size: 100%;
   background-repeat: no-repeat;
   @include smartphone {
-    width: 100px;
-    height: 100px;
-    bottom: -50px;
-    right: 30px;
+    width: 60px;
+    height: 60px;
+    bottom: -30px;
+    right: 15px;
   }
 }
 .block-ti-text {
@@ -1101,21 +1124,45 @@ ul.small-menu-ul {
   height: auto;
   @include smartphone {
     width: 100%;
-    margin-top: 20px;
   }
   h3 {
     position: relative;
     width: 100%;
     max-width: 600px;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    color: #2b2a35;
+    @include smartphone {
+      font-size: 28px;
+      text-align: center;
+    }
   }
   p {
     font-size: 18px;
     padding-right: 40px;
     @include smartphone {
       padding-right: 0;
+    }
+  }
+  a {
+    position: relative;
+    color: #334ac0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: .6;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    // &:hover {
+    //   opacity: 1;
+    // }
+    .icon {
+      color: #334ac0;
+      font-size: 26px;
+      margin-left: 10px;
     }
   }
 }
@@ -1656,6 +1703,10 @@ ul.small-menu-ul {
   align-items: center;
   padding-top: 100px;
   padding-bottom: 20px;
+  @include smartphone {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
   h3 {
     position: relative;
     width: 80%;
@@ -1663,6 +1714,9 @@ ul.small-menu-ul {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
+    @include smartphone {
+      font-size: 36px;
+    }
   }
   p {
     position: relative;
@@ -1718,7 +1772,6 @@ ul.small-menu-ul {
   position: relative;
   width: 100%;
   height: 2px;
-  background-color: red;
 }
 
 
@@ -1733,6 +1786,9 @@ ul.small-menu-ul {
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
+  @include smartphone {
+    padding-bottom: 60px;
+  }
 }
 .tab {
   position: relative;
@@ -1749,6 +1805,16 @@ ul.small-menu-ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @include smartphone {
+    width: 96%;
+    margin: 0 auto;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+  }
 
 	&_item {
     position: relative;
@@ -1756,6 +1822,12 @@ ul.small-menu-ul {
     height: auto;
     margin-left: 20px;
     cursor: pointer;
+    @include smartphone {
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 		&:last-child {
 		}
 		&_link {
@@ -1771,6 +1843,10 @@ ul.small-menu-ul {
       font-size: 18px;
       font-weight: 600;
       background: transparent;
+      @include smartphone {
+        font-size: 15px;
+        padding: 6px 16px 8px;
+      }
 
 			&:hover {
         color: #4966f7;
@@ -1788,7 +1864,6 @@ ul.small-menu-ul {
   width: 100%;
   height: auto;
   min-height: 200px;
-  // border-bottom: 2px solid silver;
 }
 .tab_content {
   position: relative;
@@ -1800,6 +1875,11 @@ ul.small-menu-ul {
 		display: flex;
     justify-content: space-around;
 		animation: fade 0.5s ease;
+    @include smartphone {
+      flex-direction: column;
+      width: 92%;
+      margin: 0 auto;
+    }
 	}
 }
 .text-tab {
@@ -1807,18 +1887,29 @@ ul.small-menu-ul {
   width: 60%;
   height: auto;
   min-height: 100px;
+  @include smartphone {
+    width: 100%;
+    margin-bottom: 10px;
+  }
   p {
     font-size: 18px;
+    @include smartphone {
+      font-size: 16px;
+    }
   }
 }
 .img-tab {
   position: relative;
   width: 250px;
-  height: 200px;
-  background-image: url("../img/vr2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  height: auto;
+  @include smartphone {
+    width: 100%;
+  }
+  img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 }
 @keyframes fade {
 	from {
@@ -1837,6 +1928,9 @@ ul.small-menu-ul {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 100px;
+  @include smartphone {
+    padding-bottom: 60px;
+  }
   .col-solutionO {
     position: relative;
     width: 96%;
@@ -1844,6 +1938,10 @@ ul.small-menu-ul {
     height: auto;
     display: flex;
     justify-content: space-around;
+    @include smartphone {
+      flex-direction: column;
+      width: 82%;
+    }
   }
   .element-sO {
     position: relative;
@@ -1853,6 +1951,14 @@ ul.small-menu-ul {
     justify-content: center;
     border-radius: 8px;
     background: linear-gradient(91.14deg,#4966f7 0,#8253ff 122.55%);
+    @include smartphone {
+      width: 100%;
+      height: 380px;
+      margin-top: 20px;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
     .row-elementSO {
       position: relative;
       width: 85%;
@@ -1866,10 +1972,17 @@ ul.small-menu-ul {
         margin-top: 40px;
         margin-bottom: 15px;
         text-align: center;
+        @include smartphone {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
       }
       p {
         font-size: 20px;
         color: white;
+        @include smartphone {
+          font-size: 18px;
+        }
       }
       a {
         position: absolute;
@@ -1882,6 +1995,10 @@ ul.small-menu-ul {
         transition: .3s;
         display: flex;
         align-items: center;
+        @include smartphone {
+          bottom: 25px;
+          opacity: 1;
+        }
         &:hover {
           opacity: 1;
         }
