@@ -433,6 +433,11 @@ strong {
   display: flex;
   justify-content: flex-start;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .logo-navbar {
+    position: relative;
+  }
+}
 .logo-navbar .logo-nav {
   position: relative;
   width: 40px;
@@ -835,7 +840,7 @@ ul.small-menu-ul {
   .header {
     margin-top: 0px;
     flex-direction: column;
-    height: 500px;
+    height: 600px;
   }
 }
 @media (min-width: 680px) and (max-width: 960px) {
@@ -922,9 +927,7 @@ ul.small-menu-ul {
 }
 @media (min-width: 0px) and (max-width: 680px) {
   .autoTypingS {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    text-shadow: 2px 2px 8px black;
+    display: none;
   }
 }
 @media (min-width: 680px) and (max-width: 960px) {
@@ -980,6 +983,17 @@ ul.small-menu-ul {
     border-right-color: currentColor;
   }
 }
+.textHeaderSamll {
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .textHeaderSamll {
+    display: block;
+    color: white;
+    font-size: 20px;
+  }
+}
+
 .tx-h-color {
   color: #ad2994;
 }
@@ -997,6 +1011,12 @@ ul.small-menu-ul {
   height: 17rem;
   z-index: 1;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .stagger-visualizer {
+    display: none;
+  }
+}
+
 .stagger-visualizer div {
   width: 1rem;
   height: 1rem;
@@ -1189,6 +1209,9 @@ ul.small-menu-ul {
 @media (min-width: 0px) and (max-width: 680px) {
   .row-services {
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    overflow: hidden;
   }
 }
 .row-services .col-services {
@@ -1234,9 +1257,19 @@ ul.small-menu-ul {
   font-weight: 700;
   text-align: right;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-services .col-services .section-serv .col-serv1 h3 {
+    font-size: 26px;
+  }
+}
 .row-services .col-services .section-serv .col-serv1 p {
   font-size: 18px;
   text-align: right;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-services .col-services .section-serv .col-serv1 p {
+    font-size: 16px;
+  }
 }
 .row-services .col-services .section-serv .col-serv2 {
   position: relative;
@@ -1277,18 +1310,52 @@ ul.small-menu-ul {
   font-weight: 700;
   text-align: left;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-services .col-services .section-serv .col-serv3 h3 {
+    font-size: 26px;
+  }
+}
 .row-services .col-services .section-serv .col-serv3 p {
   font-size: 18px;
   text-align: left;
 }
-.row-services .col-services .section-serv:nth-child(2) {
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-services .col-services .section-serv .col-serv3 p {
+    font-size: 16px;
+  }
+}
+.row-services .col-services .section-serv:nth-child(3) {
   margin-top: 60px;
 }
-.row-services .col-services .section-serv:nth-child(2) .col-serv2 .img-serv {
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-services .col-services .section-serv:nth-child(3) .col-serv2 {
+    display: none;
+  }
+}
+.row-services .col-services .section-serv:nth-child(3) .col-serv2 .img-serv {
   width: 360px;
   height: 240px;
   background-image: url("../img/weareMac2.png");
   z-index: 2;
+}
+
+.row-services-imgHide {
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-services-imgHide {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .row-services-imgHide img {
+    position: relative;
+    width: 80%;
+    width: 280px;
+    height: 217px;
+  }
 }
 
 /* Clients */
@@ -1380,6 +1447,7 @@ ul.small-menu-ul {
   .block-text-image {
     padding-top: 20px;
     padding-bottom: 60px;
+    overflow: hidden;
   }
 }
 
@@ -1506,6 +1574,21 @@ ul.small-menu-ul {
   font-size: 26px;
   margin-left: 10px;
 }
+.block-ti-text h4 {
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .block-ti-text h4 {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 680px) {
+  .ti-title {
+    margin-top: 40px;
+    margin-bottom: 30px !important;
+  }
+}
 
 .video-test {
   position: relative;
@@ -1565,17 +1648,20 @@ ul.small-menu-ul {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 500px;
   background: #4966f7 linear-gradient(95.24deg, #11182b 0, #0a1b4c 122.55%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 @media (min-width: 0px) and (max-width: 680px) {
   .contact {
     height: auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 }
 .contact .row-title {
@@ -1589,8 +1675,13 @@ ul.small-menu-ul {
 }
 .contact .row-title h2 {
   color: white;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .contact .row-title h2 {
+    font-size: 36px;
+  }
 }
 
 .body-dark .contact {
@@ -1617,17 +1708,22 @@ ul.small-menu-ul {
 }
 .row-contact .contact-element {
   position: relative;
-  width: 28%;
-  height: 70px;
-  background-color: #18bafb;
-  border-radius: 8px;
+  width: 25%;
+  height: 150px;
+  background-color: white;
+  border-radius: 6px;
   display: flex;
   justify-content: center;
+  box-shadow: 6px 30px 30px rgba(23, 43, 77, 0.1);
 }
 @media (min-width: 0px) and (max-width: 680px) {
   .row-contact .contact-element {
-    width: 100%;
+    width: 86%;
     margin-top: 30px;
+    height: 120px;
+  }
+  .row-contact .contact-element:nth-child(1) {
+    margin-top: 0;
   }
 }
 @media (min-width: 680px) and (max-width: 960px) {
@@ -1635,12 +1731,6 @@ ul.small-menu-ul {
     width: 32%;
     height: 90px;
   }
-}
-.row-contact .contact-element:nth-child(2) {
-  background-color: #1a3d82;
-}
-.row-contact .contact-element:nth-child(3) {
-  background-color: #26033b;
 }
 .row-contact .contact-element .ce-icon {
   position: relative;
@@ -1654,7 +1744,7 @@ ul.small-menu-ul {
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(155, 155, 155, 0.1);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1667,7 +1757,7 @@ ul.small-menu-ul {
   }
 }
 .row-contact .contact-element .ce-icon .cci-circle .icon {
-  color: white;
+  color: #334ac0;
   font-size: 28px;
 }
 .row-contact .contact-element .ce-text {
@@ -1685,7 +1775,7 @@ ul.small-menu-ul {
   height: auto;
   font-size: 15px;
   font-weight: 400;
-  color: white;
+  color: #2b2a35;
 }
 
 /* Main button style */
@@ -2393,6 +2483,11 @@ ul.small-menu-ul {
   position: relative;
   width: 130px;
   height: auto;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .mList {
+    display: none;
+  }
 }
 
 .menuList {

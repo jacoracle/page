@@ -170,6 +170,9 @@ strong {
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
+  @include smartphone {
+    position: relative;
+  }
   .logo-nav {
     position: relative;
     width: 40px;
@@ -560,7 +563,7 @@ ul.small-menu-ul {
   @include smartphone {
     margin-top: 0px;
     flex-direction: column;
-    height: 500px;
+    height: 600px;
   }
   @include tablet {
     flex-direction: column;
@@ -638,9 +641,10 @@ ul.small-menu-ul {
   text-align: center;
   margin: 0 auto;
   @include smartphone {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    text-shadow: 2px 2px 8px black;
+    // font-size: 1em;
+    // line-height: 1.5em;
+    // text-shadow: 2px 2px 8px black;
+    display: none;
   }
   @include tablet {
     font-size: 1.9em;
@@ -684,6 +688,14 @@ ul.small-menu-ul {
 @keyframes caret {
   50% { border-right-color: currentColor; }
 }
+.textHeaderSamll {
+  display: none;
+  @include smartphone {
+    display: block;
+    color: white;
+    font-size: 20px;
+  }
+}
 .tx-h-color {
   color: #ad2994;
 }
@@ -703,6 +715,7 @@ ul.small-menu-ul {
   // height: auto;
   z-index: 1;
   @include smartphone {
+    display: none;
   }
 }
 .stagger-visualizer div {
@@ -883,6 +896,9 @@ ul.small-menu-ul {
   justify-content: center;
   @include smartphone {
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    overflow: hidden;
   }
   .col-services {
     position: relative;
@@ -917,10 +933,16 @@ ul.small-menu-ul {
           font-size: 34px;
           font-weight: 700;
           text-align: right;
+          @include smartphone {
+            font-size: 26px;
+          }
         }
         p {
           font-size: 18px;
           text-align: right;
+          @include smartphone {
+            font-size: 16px;
+          }
         }
       }
       .col-serv2 {
@@ -956,15 +978,24 @@ ul.small-menu-ul {
           font-size: 34px;
           font-weight: 700;
           text-align: left;
+          @include smartphone {
+            font-size: 26px;
+          }
         }
         p {
           font-size: 18px;
           text-align: left;
+          @include smartphone {
+            font-size: 16px;
+          }
         }
       }
-      &:nth-child(2) {
+      &:nth-child(3) {
         margin-top: 60px;
         .col-serv2 {
+          @include smartphone {
+            display: none;
+          }
           .img-serv {
             width: 360px;
             height: 240px;
@@ -973,6 +1004,22 @@ ul.small-menu-ul {
           }
         }
       }
+    }
+  }
+}
+.row-services-imgHide {
+  display: none;
+  @include smartphone {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    img {
+      position: relative;
+      width: 80%;
+      width: 280px;
+      height: 217px;
     }
   }
 }
@@ -1053,6 +1100,7 @@ ul.small-menu-ul {
   @include smartphone {
     padding-top: 20px;
     padding-bottom: 60px;
+    overflow: hidden;
   }
 }
 .row-block-text-image {
@@ -1165,6 +1213,18 @@ ul.small-menu-ul {
       margin-left: 10px;
     }
   }
+  h4 {
+    position: relative;
+    @include smartphone {
+      margin-top: 20px;
+    }
+  }
+}
+.ti-title {
+  @include smartphone {
+    margin-top: 40px;
+    margin-bottom: 30px !important;
+  }
 }
 .video-test {
   position: relative;
@@ -1228,15 +1288,19 @@ ul.small-menu-ul {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 500px;
+  // min-height: 500px;
   background: #4966f7 linear-gradient(95.24deg,#11182b 0,#0a1b4c 122.55%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: .3s;
+  padding-top: 40px;
+  padding-bottom: 100px;
   @include smartphone {
     height: auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
   .row-title {
     position: relative;
@@ -1248,8 +1312,11 @@ ul.small-menu-ul {
     margin-bottom: 40px;
     h2 {
       color: white;
-      font-size: 40px;
+      font-size: 48px;
       font-weight: 700;
+      @include smartphone {
+        font-size: 36px;
+      }
     }
   }
 }
@@ -1276,25 +1343,28 @@ ul.small-menu-ul {
 
   .contact-element {
     position: relative;
-    width: 28%;
-    height: 70px;
-    background-color: $blue-nimbus-light;
-    border-radius: 8px;
+    width: 25%;
+    height: 150px;
+    background-color: white;
+    border-radius: 6px;
     display: flex;
     justify-content: center;
+    box-shadow: $shadow;
     @include smartphone {
-      width: 100%;
+      width: 86%;
       margin-top: 30px;
+      height: 120px;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
     }
     @include tablet {
       width: 32%;
       height: 90px;
     }
     &:nth-child(2) {
-      background-color: $blue-nimbus-dark;
     }
     &:nth-child(3) {
-      background-color: $e-purple;
     }
 
     .ce-icon {
@@ -1308,7 +1378,7 @@ ul.small-menu-ul {
         position: relative;
         width: 50px;
         height: 50px;
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(155,155,155,.1);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -1319,7 +1389,7 @@ ul.small-menu-ul {
         }
 
         .icon {
-          color: white;
+          color: #334ac0;
           font-size: 28px;
         }
       }
@@ -1338,7 +1408,7 @@ ul.small-menu-ul {
         height: auto;
         font-size: 15px;
         font-weight: 400;
-        color: white;
+        color: #2b2a35;
       }
     }
   }
@@ -2017,6 +2087,9 @@ ul.small-menu-ul {
   position: relative;
   width: 130px;
   height: auto;
+  @include smartphone {
+    display: none;
+  }
 }
 .menuList {
   position: relative;
