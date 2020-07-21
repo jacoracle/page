@@ -286,7 +286,7 @@ ol.scroll-nav__list:after {
   transition: .2s;
 }
 .scroll-nav__item--active>.scroll-nav__link {
-  color: #ad2994;
+  color: #4966f7;
 }
 
 // Dark mode
@@ -894,6 +894,7 @@ ul.small-menu-ul {
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
   @include smartphone {
     flex-direction: column;
     padding-top: 20px;
@@ -1097,6 +1098,7 @@ ul.small-menu-ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   @include smartphone {
     padding-top: 20px;
     padding-bottom: 60px;
@@ -1330,26 +1332,56 @@ ul.small-menu-ul {
 }
 .row-contact {
   position: relative;
-  width: 80%;
+  width: 94%;
+  max-width: $max-width;
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   @include smartphone {
     flex-direction: column;
     margin-top: 0px;
   }
 
-  .contact-element {
+  .rc-col1 {
     position: relative;
-    width: 25%;
-    height: 150px;
-    background-color: white;
-    border-radius: 6px;
+    width: 50%;
+    height: auto;
     display: flex;
     justify-content: center;
-    box-shadow: $shadow;
+    align-items: center;
+    img {
+      position: relative;
+      width: 90%;
+      max-width: 450px;
+      height: auto;
+    }
+  }
+  .rc-col2 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .contact-element {
+    position: relative;
+    width: 80%;
+    height: 110px;
+    // background-color: rgba(255,255,255, .1);
+    // background-color: #0a1b4c;
+    // border-radius: 6px;
+
+    border-bottom: 1px solid rgba(255,255,255, .2 );
+    display: flex;
+    justify-content: center;
+    // box-shadow: $shadow;
+    margin-top: 25px;
+    &:nth-child(1) {
+      margin-top: 0px;
+    }
     @include smartphone {
       width: 86%;
       margin-top: 30px;
@@ -1359,8 +1391,8 @@ ul.small-menu-ul {
       }
     }
     @include tablet {
-      width: 32%;
-      height: 90px;
+      // width: 32%;
+      // height: 90px;
     }
     &:nth-child(2) {
     }
@@ -1376,9 +1408,10 @@ ul.small-menu-ul {
       align-items: center;
       .cci-circle {
         position: relative;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(155,155,155,.1);
+        width: 70px;
+        height: 70px;
+        // background-color: rgba(155,155,155,.9);
+        background-color: white;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -1390,7 +1423,7 @@ ul.small-menu-ul {
 
         .icon {
           color: #334ac0;
-          font-size: 28px;
+          font-size: 32px;
         }
       }
     }
@@ -1406,9 +1439,10 @@ ul.small-menu-ul {
         position: relative;
         width: 100%;
         height: auto;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
-        color: #2b2a35;
+        // color: #2b2a35;
+        color: white;
       }
     }
   }
@@ -1954,30 +1988,45 @@ ul.small-menu-ul {
 }
 .text-tab {
   position: relative;
-  width: 60%;
+  width: calc(100% - 300px);
   height: auto;
   min-height: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/s1bg.png");
+  background-position: right;
+  background-size: 400px;
+  background-repeat: no-repeat;
   @include smartphone {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     margin-bottom: 10px;
+    background-position: center;
+    background-size: 100%;
   }
   p {
+    position: relative;
+    width: 50%;
     font-size: 18px;
     @include smartphone {
-      font-size: 16px;
+      font-size: 17px;
+      width: 100%;
     }
   }
 }
 .img-tab {
   position: relative;
-  width: 250px;
+  width: 300px;
   height: auto;
+  display: flex;
+  justify-content: center;
   @include smartphone {
     width: 100%;
   }
   img {
     position: relative;
     width: 100%;
+    max-width: 290px;
     height: auto;
   }
 }
@@ -1998,6 +2047,10 @@ ul.small-menu-ul {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 100px;
+  // background-image: url("../img/bgTest.png");
+  // background-position: center;
+  // background-size: 100%;
+  // background-repeat: no-repeat;
   @include smartphone {
     padding-bottom: 60px;
   }
@@ -2021,10 +2074,11 @@ ul.small-menu-ul {
     justify-content: center;
     border-radius: 8px;
     background: linear-gradient(91.14deg,#4966f7 0,#8253ff 122.55%);
+    box-shadow: $shadow;
     @include smartphone {
       width: 100%;
       height: 380px;
-      margin-top: 20px;
+      margin-top: 30px;
       &:nth-child(1) {
         margin-top: 0;
       }
@@ -2078,8 +2132,31 @@ ul.small-menu-ul {
           margin-left: 10px;
         }
       }
+      .imgSO {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        right: -10px;
+        bottom: -40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        @include smartphone {
+          right: -10px;
+          bottom: -5px;
+        }
+      }
     }
   }
+}
+.iSO1 {
+  background-image: url("../img/so3.png");
+}
+.iSO2 {
+  background-image: url("../img/so2.png");
+}
+.iSO3 {
+  background-image: url("../img/so1.png");
 }
 
 // Menu Dropdown
