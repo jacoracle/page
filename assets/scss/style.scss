@@ -552,7 +552,8 @@ ul.small-menu-ul {
 .header {
   position: relative;
   width: 100%;
-  height: 620px;
+  // height: 620px;
+  height: 700px;
   background-color: #11182b;
   margin-top: 60px;
   display: flex;
@@ -614,90 +615,47 @@ ul.small-menu-ul {
 // AutoTyping
 .header-text {
   position: relative;
-  width: 700px;
-  height: 250px;
+  width: 50%;
+  max-width: 700px;
+  height: auto;
   z-index: 2;
   @include smartphone {
     width: 90%;
-    height: 180px;
     margin-top: 60px;
   }
   @include tablet {
-    height: 210px;
+    width: 70%;
     margin-top: 40px;
-    width: 690px;
-  }
-}
-.autoTypingS {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-  line-height: 1.8em;
-  color: white;
-  overflow: hidden;
-  border-right: 1px solid transparent;
-  width: 100%;
-  white-space: nowrap;
-  text-align: center;
-  margin: 0 auto;
-  @include smartphone {
-    // font-size: 1em;
-    // line-height: 1.5em;
-    // text-shadow: 2px 2px 8px black;
-    display: none;
-  }
-  @include tablet {
-    font-size: 1.9em;
-    line-height: 1.7em;
   }
   @include laptop {
+    width: 40%;
   }
 }
-.atAnimated {
+// Autotype
+.text-js {
+  opacity: 0;
+}
+.headline {
+  position: relative;
   width: 100%;
-  -webkit-animation: typing 3s steps(40) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
-          animation: typing 3s steps(40) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
+  height: 200px;
 }
-.atAnimated2 {
-  width: 100%;
-  -webkit-animation: typing 3s steps(38) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
-          animation: typing 3s steps(38) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
-          animation-delay: 3s;
-}
-.atAnimated3 {
-  width: 75%;
-  -webkit-animation: typing 3s steps(34) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
-          animation: typing 3s steps(34) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
-          animation-delay: 6s;
-}
-.atAnimated4 {
-  width: 100%;
-  -webkit-animation: typing 3s steps(41) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
-          animation: typing 3s steps(41) 0s backwards, caret 500ms steps(1) 0s 10 forwards;
-          animation-delay: 9s;
-}
-@-webkit-keyframes typing {
-  from { width: 0; }
-}
-@keyframes typing {
-  from { width: 0; }
-}
-@-webkit-keyframes caret {
-  50% { border-right-color: currentColor; }
-}
-@keyframes caret {
-  50% { border-right-color: currentColor; }
-}
-.textHeaderSamll {
-  display: none;
+h3.text-js {
+  color: white;
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: 600;
   @include smartphone {
-    display: block;
-    color: white;
-    font-size: 20px;
+    font-size: 26px;
+    line-height: 40px;
+  }
+  @include tablet {
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 .tx-h-color {
-  color: #ad2994;
+  color: #ad2994 !important;
 }
 // Header animated
 .stagger-visualizer {
@@ -721,9 +679,9 @@ ul.small-menu-ul {
 .stagger-visualizer div {
   width: 1rem;
   height: 1rem;
-  border: 1px solid #FFF;
-  background-color: #FFF;
-  opacity: .8;
+  border: 1px solid #1d2740;
+  background-color: #1d2740;
+  opacity: 1;
   @include smartphone {
     opacity: .3;
   }
@@ -1350,11 +1308,17 @@ ul.small-menu-ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include smartphone {
+      width: 100%;
+    }
     img {
       position: relative;
       width: 90%;
       max-width: 450px;
       height: auto;
+      @include smartphone {
+        max-width: 300px;
+      }
     }
   }
   .rc-col2 {
@@ -1364,21 +1328,25 @@ ul.small-menu-ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @include smartphone {
+      width: 100%;
+      align-items: center;
+    }
   }
 
   .contact-element {
     position: relative;
     width: 80%;
     height: 110px;
-    // background-color: rgba(255,255,255, .1);
-    // background-color: #0a1b4c;
-    // border-radius: 6px;
-
     border-bottom: 1px solid rgba(255,255,255, .2 );
     display: flex;
     justify-content: center;
     // box-shadow: $shadow;
     margin-top: 25px;
+    @include smartphone {
+      height: 80px !important;
+      margin-top: 15px;
+    }
     &:nth-child(1) {
       margin-top: 0px;
     }
@@ -1416,6 +1384,10 @@ ul.small-menu-ul {
         display: flex;
         justify-content: center;
         align-items: center;
+        @include smartphone {
+          width: 50px;
+          height: 50px;
+        }
         @include tablet {
           width: 40px;
           height: 40px;

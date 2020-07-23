@@ -100,7 +100,6 @@
   </div>
   <!-- Mainheader -->
   <!-- Header -->
-  <!-- <div class="header lax" data-lax-preset="eager" data-lax-anchor="#te"> -->
   <div class="header lax" data-lax-preset="" data-lax-anchor="#te">
     <div id="te"></div>
     <!-- <div class="header-img lax" data-lax-preset="blurInOut" data-lax-anchor="self"> -->
@@ -113,24 +112,12 @@
       </div>
     </div>
     <!-- AutoTyping -->
-    <!-- <div class="header-text lax" data-lax-translate-Y="300 0, 500 60" data-lax-opacity="300 1, 500 0" data-lax-anchor="#te"> -->
     <div class="header-text lax" data-lax-preset="fadeInOut">
-    	<div class="autoTypingS atAnimated">
-        Ayudamos a dar vida a tus grandes ideas
+      <div class="type-js headline">
+        <h3 class="text-js">
+          Ayudamos a dar vida a tus grandes ideas de negocio mediante software inteligente, apis flexibles y análisis de datos que te ayuden a tomar mejores decisiones.
+        </h3>
       </div>
-      <div class="autoTypingS atAnimated2">
-        de negocio mediante <span class="tx-h-color">software inteligente</span>,
-      </div>
-      <div class="autoTypingS atAnimated3">
-        apis flexibles y análisis de datos
-      </div>
-      <div class="autoTypingS atAnimated4">
-        que te ayuden a tomar mejores decisiones.
-      </div>
-      <p class="textHeaderSamll">
-        Ayudamos a dar vida a tus grandes ideas de negocio mediante <span class="tx-h-color">software inteligente</span>,
-        apis flexibles y análisis de datos que te ayuden a tomar mejores decisiones.
-      </p>
     </div>
     <div class="line-header"></div>
   </div>
@@ -261,13 +248,13 @@
 
   <!-- Solution org -->
   <div class="row-newStackInfo sectionBg">
-    <h3 class="lax" data-lax-translate-Y="300 0, 500 40" data-lax-opacity="300 1, 500 0" data-lax-anchor="self">Solución</h3>
+    <h3 class="scroll-fade-in-up">Solución</h3>
     <p>Por tipo de organización</p>
   </div>
   <div class="row-solutionO sectionBg">
     <div class="col-solutionO">
       <!-- Startup -->
-      <div class="element-sO">
+      <div class="element-sO scroll-fade-in-up">
         <div class="row-elementSO">
           <h3>STARTUP</h3>
           <p>Podemos armar tu modelo de startup desde el inicio o ayudarte en el flujo para validar tu idea en mercado. Tenemos a todo un equipo de desarrollo para hacer realidad tu sueño.
@@ -277,7 +264,7 @@
         </div>
       </div>
       <!-- PYMES -->
-      <div class="element-sO">
+      <div class="element-sO scroll-fade-in-up">
         <div class="row-elementSO">
           <h3>PYMES</h3>
           <p>Cómo Edukai puede empoderar tu proyecto pequeño mediano
@@ -287,7 +274,7 @@
         </div>
       </div>
       <!-- Corpotativos -->
-      <div class="element-sO e-sO-neagtive">
+      <div class="element-sO scroll-fade-in-up e-sO-neagtive">
         <div class="row-elementSO">
           <h3>CORPORATIVOS</h3>
           <p>Cómo Edukai ayuda a los corporativos a optimizar soluciones de Big Data, Machine Learning e inteligencia en el negocio.
@@ -305,14 +292,12 @@
 <div class="row-title-single mt-60">
   <h3>Empresas que confían en nosotros</h3>
 </div>
-<!-- <div class="block-clients lax" data-lax-preset="fadeInOut blurOut-50" data-lax-translate-y="0 0, 110 100"> -->
-<div class="block-clients lax" data-lax-translate-Y="300 0, 500 40" data-lax-opacity="300 1, 500 0" data-lax-anchor="self">
-<!-- <div class="block-clients lax" data-lax-translate-y="vh 40, -elh 0" data-lax-anchor="self"> -->
-<!-- <div class="block-clients lax" data-lax-opacity="200 1, 300 1, 0 0" data-lax-anchor="self"> -->
+<!-- <div class="block-clients lax" data-lax-translate-Y="300 0, 500 40" data-lax-opacity="300 1, 500 0" data-lax-anchor="self"> -->
+<div class="block-clients">
   <div class="row-clients">
-    <a href="https://www.grupoeducare.com/web/" target="_blank" class="brand brand-1"></a>
-    <a href="http://nimbusged.com/" target="_blank" class="brand brand-2"></a>
-    <a href="https://www.grupoeducare.com/web/todo/todo.html" target="_blank" class="brand brand-3"></a>
+    <a href="https://www.grupoeducare.com/web/" target="_blank" class="brand brand-1 scroll-fade-in-up"></a>
+    <a href="http://nimbusged.com/" target="_blank" class="brand brand-2 scroll-fade-in-up"></a>
+    <a href="https://www.grupoeducare.com/web/todo/todo.html" target="_blank" class="brand brand-3 scroll-fade-in-up"></a>
   </div>
 </div>
 
@@ -383,6 +368,7 @@
       <img src="assets/img/stack20.png" alt="">
     </div>
   </div>
+
 
   <!-- Contact -->
   <!-- <div class="contact lax" id="contact" data-lax-translate-Y="300 0, 500 60" data-lax-anchor="self"> -->
@@ -493,17 +479,23 @@
   <!-- End Footer -->
 
   <!-- Import Js -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <!-- Autotype -->
+  <script  src="assets/js/autotype.js"></script>
   <!-- Navbar Indicators -->
   <script src='assets/js/scrollnav.min.umd.js'></script>
+  <!-- Scroll Effect Lax -->
   <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-
+  <!-- Init Lax -->
+  <script src="assets/js/script.js"></script>
+  <!-- ScrolMagic -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'></script>
+  <script src="assets/js/fade.js"></script>
   <!-- Header animated -->
   <script src='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.js'></script>
-
   <!-- Local script -->
   <script src="assets/js/index.js"></script>
   <script src="assets/js/index2.js"></script>
-  <script src="assets/js/script.js"></script>
   <script src="assets/js/scriptheader.js"></script>
 </body>
 </html>
