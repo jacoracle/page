@@ -1,6 +1,5 @@
 // $(document).ready(function(){
 //   });
-
   // Var
   var $switch = document.querySelector(".switch-mode");
   var $navbar = document.querySelector(".navbar");
@@ -18,9 +17,7 @@
   var $l3 = document.querySelector(".l3");
   var $l4 = document.querySelector(".l4");
   var $l5 = document.querySelector(".l5");
-
-
-
+  var $l6 = document.querySelector(".l6");
 
 // Dark mode
 $switch.addEventListener('click', function () {
@@ -106,23 +103,12 @@ $l5.addEventListener('click', function () {
   $smallmenu.classList.add("small-menu-hide");
   $smallmenu.classList.remove("small-menu-show");
 });
-
-
-
-// Links Menu
-// const lis = document.querySelectorAll("ul.links-navbar li");
-// const a = document.querySelectorAll("ul.links-navbar li a");
-//
-// for (let i = 0; i < lis.length; i++) {
-//   lis[i].addEventListener("click", function() {
-//     for (let i = 0; i < lis.length; i++) {
-//
-//       a[i].classList.remove("active-text");
-//     }
-//
-//     a[i].classList.add("active-text");
-//   });
-// }
+$l6.addEventListener('click', function () {
+  $bgmenu.classList.remove("background-menu-show");
+  $body.classList.remove("body-overflow");
+  $smallmenu.classList.add("small-menu-hide");
+  $smallmenu.classList.remove("small-menu-show");
+});
 
 // Time Out Imagotype animated
 setTimeout(function(){
@@ -137,19 +123,3 @@ setTimeout(function(){
 setTimeout(function(){
   $logotype.classList.remove("type-svg-animated");
 }, 50000);
-
-
-// Navbar
-const content = document.querySelector('.post__article');
-const insertTarget = document.querySelector('.header-menu');
-scrollnav.init(content, {
-  debug: false,
-  insertTarget: insertTarget,
-  insertLocation: 'append'
-});
-
-
-// Px
-window.addEventListener("hashchange", function () {
-    window.scrollTo(window.scrollX, window.scrollY - 100);
-});

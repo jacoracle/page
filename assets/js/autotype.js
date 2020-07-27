@@ -1,33 +1,32 @@
-function autoType(elementClass, typingSpeed){
-  var thhis = $(elementClass);
-  thhis.css({
-    "position": "relative",
-    "display": "inline-block"
-  });
-  thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
-  thhis = thhis.find(".text-js");
-  var text = thhis.text().trim().split('');
-  var amntOfChars = text.length;
-  var newString = "";
-  thhis.text("|");
-  setTimeout(function(){
-    thhis.css("opacity",1);
-    thhis.prev().removeAttr("style");
-    thhis.text("");
-    for(var i = 0; i < amntOfChars; i++){
-      (function(i,char){
-        setTimeout(function() {
-          newString += char;
-          thhis.text(newString);
-        },i*typingSpeed);
-      })(i+1,text[i]);
-    }
-  },100);
-}
+// Autotype
+setTimeout(function() {
+    $('#intro').typed({
+      strings: [
+        "Ayudamos a dar vida a tus grandes ideas de negocio mediante software inteligente, apis flexibles y análisis de datos que te ayuden a tomar mejores decisiones."
+      ],
+      typeSpeed: 5,
+      startDelay: 1000,
+      backDelay: 3000,
+      showCursor: false,
+      loop: true,
+      loopCount: false,
+      waitUntilVisible: true,
+      contentType: 'html'
+    });
+  }, 500);
 
-$(document).ready(function(){
-  // Now to start autoTyping just call the autoType function with the
-  // class of outer div
-  // The second paramter is the speed between each letter is typed.
-  autoType(".type-js",70);
-});
+  // $(document).ready(function(){
+  //   $("#textFooter").typed({
+  //     strings: [
+  //       "Say hello! ☺"
+  //     ],
+  //     typeSpeed: 5,
+  //     startDelay: 1000,
+  //     backDelay: 3000,
+  //     showCursor: false,
+  //     loop: true,
+  //     loopCount: false,
+  //     waitUntilVisible: true,
+  //     contentType: 'html'
+  //    });
+  // });

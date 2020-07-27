@@ -977,6 +977,29 @@ h3.text-js {
   }
 }
 
+#intro {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: 600;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  #intro {
+    font-size: 26px;
+    line-height: 40px;
+    height: 220px;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  #intro {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
 .stagger-visualizer {
   position: absolute;
   display: -webkit-box;
@@ -2678,6 +2701,25 @@ h3.text-js {
   z-index: 99;
 }
 
+.menuElement {
+  position: relative;
+  width: auto;
+  height: auto;
+  font-weight: 400;
+  color: lightslategray;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .menuElement {
+    display: none;
+  }
+}
+
 .body-dark .row-newStackInfo h3 {
   color: #4966f7;
 }
@@ -2694,20 +2736,6 @@ h3.text-js {
   height: 600px;
   background-color: silver;
   margin-top: 60px;
-}
-
-.menuElement {
-  position: relative;
-  width: auto;
-  height: auto;
-  font-weight: 400;
-  color: lightslategray;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.2s;
-  text-align: center;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

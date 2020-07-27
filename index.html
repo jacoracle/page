@@ -18,11 +18,12 @@
     <div class="small-menu-header"><div class="smh-logo"></div></div>
     <div class="small-menu-content">
       <ul class="small-menu-ul">
-        <li><a class="l1" href="#somos">¿Qué hacemos?</a></li>
-        <li><a class="l2" href="#servicios">Servicios</a></li>
-        <li><a class="l3" href="#procesos">Procesos</a></li>
-        <li><a class="l4" href="#productos">Productos</a></li>
-        <li><a class="l5" href="#contacto">Contacto</a></li>
+        <li><a class="l1" href="#services">Servicios</a></li>
+        <li><a class="l2" href="#products">Productos</a></li>
+        <li><a class="l3" href="pymes.html">Soluciones PYMES</a></li>
+        <li><a class="l4" href="pymes.html">Soluciones Corporativos</a></li>
+        <li><a class="l5" href="pymes.html">Soluciones Startup</a></li>
+        <li><a class="l6" href="#contact">Contáctanos</a></li>
       </ul>
     </div>
   </div>
@@ -71,20 +72,21 @@
         </div>
       </a>
 
-      <!-- Full Links -->
+      <!-- Menu List -->
       <a class="menuElement" href="#services">Servicios</a>
       <a class="menuElement" href="#products">Productos</a>
-      <a class="menuElement" href="#contacto">Contáctanos</a>
       <ul class="mList">
         <li class="menuList">
             <h2 class="menu-title">Soluciones</h2>
             <ul class="menuL-dropdown">
               <li><a href="pymes.html">PYMES</a></li>
-              <li>Corporativos</li>
-              <li>Startup</li>
+              <li><a href="pymes.html">Corporativos</a></li>
+              <li><a href="pymes.html">Startup</a></li>
             </ul>
         </li>
       </ul>
+      <a class="menuElement" href="#contact">Contáctanos</a>
+      <!-- End Menu List -->
 
       <div class="switch-mode light-mode">
         <div class="icon ni-light" id="icon-light"></div>
@@ -101,7 +103,6 @@
   <!-- Header -->
   <div class="header lax" data-lax-preset="" data-lax-anchor="#te">
     <div id="te"></div>
-    <!-- <div class="header-img lax" data-lax-preset="blurInOut" data-lax-anchor="self"> -->
     <div class="header-img">
       <!-- Animated -->
       <div class="stagger-visualizer"></div>
@@ -116,11 +117,15 @@
     </div>
     <!-- AutoTyping -->
     <div class="header-text lax" data-lax-preset="fadeInOut">
-      <div class="type-js headline">
+      <!-- <div class="type-js headline">
         <h3 class="text-js">
           Ayudamos a dar vida a tus grandes ideas de negocio mediante software inteligente, apis flexibles y análisis de datos que te ayuden a tomar mejores decisiones.
         </h3>
-      </div>
+      </div> -->
+      <noscript>
+      <h2>Ayudamos a dar vida a tus grandes ideas de negocio mediante software inteligente, apis flexibles y análisis de datos que te ayuden a tomar mejores decisiones.</h2>
+      </noscript>
+    <h2 id="intro"></h2>
     </div>
     <div class="line-header"></div>
   </div>
@@ -202,7 +207,7 @@
   		<ul class="tab_menu clearfix">
   			<li class="tab_menu_item"><a href="#" data-id="about" class="tab_menu_item_link is-active">Educación</a></li>
   			<li class="tab_menu_item"><a href="#" data-id="works" class="tab_menu_item_link">Salud</a></li>
-  			<li class="tab_menu_item"><a href="#" data-id="contact" class="tab_menu_item_link">Energía</a></li>
+  			<li class="tab_menu_item"><a href="#" data-id="energy" class="tab_menu_item_link">Energía</a></li>
         <li class="tab_menu_item"><a href="#" data-id="sserv" class="tab_menu_item_link">Servicios financieros</a></li>
         <li class="tab_menu_item"><a href="#" data-id="svideo" class="tab_menu_item_link">Video juegos</a></li>
         <li class="tab_menu_item"><a href="#" data-id="shotel" class="tab_menu_item_link">Hotelería</a></li>
@@ -220,7 +225,7 @@
                 <p>Mejora el cuidado de los pacientes y las operaciones con data de tu servicio.</p>
               </div>
   					</div>
-  					<div class="tab_content" id="contact">
+  					<div class="tab_content" id="energy">
               <div class="img-tab"><img src="assets/img/s3.png" alt=""></div>
               <div class="text-tab">
                 <p>Brinda al sector público y privado data relevante de hábitos de consumo y sé más competitivo.</p>
@@ -373,10 +378,9 @@
 
 
   <!-- Contact -->
-  <!-- <div class="contact lax" id="contact" data-lax-translate-Y="300 0, 500 60" data-lax-anchor="self"> -->
-  <div class="contact" id="contact">
+  <div class="contact">
     <div class="row-title" id="aboutus">
-      <h2 id="contacto" class="scroll-fade-in-up">Contáctanos</h2>
+      <h2 id="contact" class="scroll-fade-in-up">Contáctanos</h2>
     </div>
     <div class="row-contact">
       <div class="rc-col1">
@@ -483,11 +487,12 @@
   <!-- Import Js -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <!-- Autotype -->
-  <script  src="assets/js/autotype.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js'></script>
+  <script src="assets/js/autotype.js"></script>
   <!-- Navbar Indicators -->
   <script src='assets/js/scrollnav.min.umd.js'></script>
   <!-- Scroll Effect Lax -->
-  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
   <!-- Init Lax -->
   <script src="assets/js/script.js"></script>
   <!-- ScrolMagic -->
