@@ -1,6 +1,7 @@
 // Import Variables
 @import 'variables.scss';
 @import 'icons.scss';
+@import 'pages.scss';
 
 /*Import font*/
 @font-face {
@@ -120,8 +121,15 @@ strong {
 .p-dark {
   color: #e3e8ea;
 }
+// Margin top class
 .mt-60 {
   margin-top: 60px;
+  @include smartphone {
+    margin-top: 40px;
+  }
+}
+.mt-80 {
+  margin-top: 80px;
   @include smartphone {
     margin-top: 40px;
   }
@@ -2149,7 +2157,7 @@ h3.text-js {
         }
       }
       p {
-        font-size: 20px;
+        font-size: 19px;
         color: white;
         @include smartphone {
           font-size: 18px;
@@ -2323,7 +2331,9 @@ h3.text-js {
   }
   .sectionBg {background-color: #13141f;}
 }
-
+.menuElement-active {
+  color: $violet;
+}
 // Last
 
 // External Page
@@ -2341,11 +2351,12 @@ h3.text-js {
     width: auto;
     height: auto;
     padding: 5px;
-    bottom: 40px;
-    right: 40px;
+    padding-left: 10px;
+    bottom: 32px;
+    right: 32px;
     text-align: center;
     background: #f5f5f5;
-    color: #444;
+    color: $blue-nimbus-dark;
     cursor: pointer;
     border: 0;
     border-radius: 2px;
@@ -2354,6 +2365,12 @@ h3.text-js {
     opacity: 0;
     z-index: 3;
     box-shadow: $shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      margin-left: 6px;
+    }
 }
 #back-to-top:hover {
     background: #e9ebec;

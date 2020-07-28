@@ -251,6 +251,7 @@
   content: "";
 }
 
+/* Internal pages */
 /*Import font*/
 @font-face {
   font-family: "Open Sans", sans-serif;
@@ -382,6 +383,15 @@ strong {
 }
 @media (min-width: 0px) and (max-width: 680px) {
   .mt-60 {
+    margin-top: 40px;
+  }
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .mt-80 {
     margin-top: 40px;
   }
 }
@@ -2545,7 +2555,7 @@ h3.text-js {
   }
 }
 .row-solutionO .element-sO .row-elementSO p {
-  font-size: 20px;
+  font-size: 19px;
   color: white;
 }
 @media (min-width: 0px) and (max-width: 680px) {
@@ -2726,6 +2736,10 @@ h3.text-js {
   background-color: #13141f;
 }
 
+.menuElement-active {
+  color: #4966f7;
+}
+
 .header-page {
   position: relative;
   width: 100%;
@@ -2739,11 +2753,12 @@ h3.text-js {
   width: auto;
   height: auto;
   padding: 5px;
-  bottom: 40px;
-  right: 40px;
+  padding-left: 10px;
+  bottom: 32px;
+  right: 32px;
   text-align: center;
   background: #f5f5f5;
-  color: #444;
+  color: #1a3d82;
   cursor: pointer;
   border: 0;
   border-radius: 2px;
@@ -2752,6 +2767,12 @@ h3.text-js {
   opacity: 0;
   z-index: 3;
   box-shadow: 6px 30px 30px rgba(23, 43, 77, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#back-to-top .icon {
+  margin-left: 6px;
 }
 
 #back-to-top:hover {

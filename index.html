@@ -133,7 +133,7 @@
 
 <div class="post__article" id="lineHeader">
 
-  <div class="block-text-image">
+  <div class="block-text-image mt-80">
     <div class="row-block-text-image">
       <div class="block-ti-text lax" data-lax-translate-x="300 0, 500 -100" data-lax-opacity="300 1, 500 0" data-lax-anchor="self">
         <h3 class="ti-title">¿Por qué nacemos?</h3>
@@ -198,7 +198,7 @@
   </div>
 
   <!-- Other services -->
-  <div class="row-newStackInfo">
+  <div id="industry" class="row-newStackInfo">
     <h3 class="scroll-fade-in-up">Soluciones por industria</h3>
     <p>Industrias de impacto</p>
   </div>
@@ -266,7 +266,7 @@
           <h3>STARTUP</h3>
           <p>Podemos armar tu modelo de startup desde el inicio o ayudarte en el flujo para validar tu idea en mercado. Tenemos a todo un equipo de desarrollo para hacer realidad tu sueño.
             Edukai empodera tus grandes ideas.</p>
-          <a href="#">Conocer más <div class="icon ni-arrow-right"></div></a>
+          <a href="pymes.html">Conocer más <div class="icon ni-arrow-right"></div></a>
           <div class="imgSO iSO3"></div>
         </div>
       </div>
@@ -276,7 +276,7 @@
           <h3>PYMES</h3>
           <p>Cómo Edukai puede empoderar tu proyecto pequeño mediano
              o grande. Empoderando a tu organización con nuestros procesos y tecnología.</p>
-          <a href="#">Conocer más <div class="icon ni-arrow-right"></div></a>
+          <a href="pymes.html">Conocer más <div class="icon ni-arrow-right"></div></a>
           <div class="imgSO iSO1"></div>
         </div>
       </div>
@@ -286,7 +286,7 @@
           <h3>CORPORATIVOS</h3>
           <p>Cómo Edukai ayuda a los corporativos a optimizar soluciones de Big Data, Machine Learning e inteligencia en el negocio.
             Usa a tu favor la inteligencia artificial.</p>
-          <a href="#">Conocer más <div class="icon ni-arrow-right"></div></a>
+          <a href="pymes.html">Conocer más <div class="icon ni-arrow-right"></div></a>
           <div class="imgSO iSO2"></div>
         </div>
       </div>
@@ -428,8 +428,7 @@
 </div>
 
 <!-- Back to top -->
-<a href="#" id="back-to-top">Back to top</a>
-
+<a href="#" id="back-to-top">Back to top <div class="icon ni-arrowup"></div></a>
 <!-- <p class="subnav"><a href="#products">p1</a> <a href="#p2">p2</a> <a href="#p3">p3</a> <a href="#p4">p4</a></p> -->
 
   <!-- Footer -->
@@ -448,9 +447,8 @@
         <div class="col-footer">
           <div class="cf-1">
             <h4>Edukai</h4>
-            <a href="#somos">Somos</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#procesos">Procesos</a>
+            <a class="aScroll" href="#services">Somos</a>
+            <a class="aScroll" href="#industry">Soluciones</a>
             <a href="#">Aviso de privacidad</a>
           </div>
           <div class="cf-2">
@@ -476,7 +474,6 @@
 
       </div>
     </div>
-
     <div class="line-divider-footer"></div>
 
     <div class="line-footer">
@@ -508,30 +505,6 @@
   <script src="assets/js/functions.js"></script>
   <script src="assets/js/scriptheader.js"></script>
   <script src="assets/js/functionsJquery.js"></script>
-
-  <script>
-  if ($('#back-to-top').length) {
-      var scrollTrigger = 100, // px
-          backToTop = function () {
-              var scrollTop = $(window).scrollTop();
-              if (scrollTop > scrollTrigger) {
-                  $('#back-to-top').addClass('show');
-              } else {
-                  $('#back-to-top').removeClass('show');
-              }
-          };
-      backToTop();
-      $(window).on('scroll', function () {
-          backToTop();
-      });
-      $('#back-to-top').on('click', function (e) {
-          e.preventDefault();
-          $('html,body').stop().animate({
-              scrollTop: 0
-          }, 700);
-      });
-  }
-  </script>
 
 </body>
 </html>
