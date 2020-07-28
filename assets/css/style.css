@@ -257,15 +257,12 @@
   width: 100%;
   height: 600px;
   background: #4966f7 linear-gradient(95.24deg, #4966f7 0, #8253ff 122.55%);
-  margin-top: 60px;
+  top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 0px) and (max-width: 680px) {
-  .header-page {
-    margin-top: 0px;
-  }
+  transition: 0.3s;
+  z-index: 3;
 }
 .header-page h2 {
   position: relative;
@@ -289,17 +286,17 @@
 .btn-back {
   position: absolute;
   left: 12%;
-  bottom: 20px;
+  bottom: 15px;
   width: auto;
-  height: 36px;
+  height: 30px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid white;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 4px;
-  padding-right: 12px;
+  padding-left: 2px;
+  padding-right: 8px;
   font-size: 16px;
   color: white;
   text-decoration: none;
@@ -313,6 +310,38 @@
   margin-right: 6px;
   color: white;
   font-size: 24px;
+}
+
+.btn-backScroll {
+  position: fixed;
+  bottom: 0;
+  top: 65px;
+}
+
+.miniheader-scroll {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 60px;
+  left: 0;
+  background: #4966f7 linear-gradient(95.24deg, #4966f7 0, #8253ff 122.55%);
+  display: none;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+.miniheader-scroll h4 {
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.miniheader-scrollActive {
+  display: flex;
 }
 
 .area {
@@ -438,6 +467,13 @@
   background-size: 100%;
   z-index: 2;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .hp-graphic {
+    right: 2%;
+    width: 300px;
+    height: 230px;
+  }
+}
 
 .row-page {
   position: relative;
@@ -560,6 +596,19 @@
   .row-grid-image .col-grid-image .col-gi2 img:nth-child(2) {
     margin-top: 0;
   }
+}
+
+#headerIndicator {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  left: 0;
+  bottom: 50px;
+}
+
+.display-none {
+  display: none;
 }
 
 /*Import font*/
@@ -713,19 +762,13 @@ strong {
   height: 60px;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
   box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15);
 }
-@media (min-width: 0px) and (max-width: 680px) {
-  .navbar {
-    position: sticky;
-  }
-}
-
 .navbar-light {
   background-color: white;
 }
