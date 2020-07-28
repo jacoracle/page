@@ -73,8 +73,8 @@
       </a>
 
       <!-- Menu List -->
-      <a class="menuElement" href="#services">Servicios</a>
-      <a class="menuElement" href="#products">Productos</a>
+      <a class="menuElement aScroll" href="#services">Servicios</a>
+      <a class="menuElement aScroll" href="#products">Productos</a>
       <ul class="mList">
         <li class="menuList">
             <h2 class="menu-title">Soluciones</h2>
@@ -125,7 +125,7 @@
       <noscript>
       <h2>Ayudamos a dar vida a tus grandes ideas de negocio mediante software inteligente, apis flexibles y análisis de datos que te ayuden a tomar mejores decisiones.</h2>
       </noscript>
-    <h2 id="intro"></h2>
+    <h2 id="typed"></h2>
     </div>
     <div class="line-header"></div>
   </div>
@@ -338,7 +338,7 @@
   </div>
 
   <div class="row-newStack">
-    <div class="col-stack lax" data-lax-preset="linger">
+    <div class="col-stack lax" data-lax-preset="eager">
       <img src="assets/img/stack1.png" alt="">
       <img src="assets/img/stack2.png" alt="">
       <img src="assets/img/stack3.png" alt="">
@@ -350,7 +350,7 @@
       <img src="assets/img/stack7.png" alt="">
       <img src="assets/img/stack8.png" alt="">
     </div>
-    <div class="col-stack lax" data-lax-preset="linger">
+    <div class="col-stack lax" data-lax-preset="eager">
       <img src="assets/img/stack9.png" alt="">
       <img src="assets/img/stack10.png" alt="">
       <img src="assets/img/stack11.png" alt="">
@@ -362,7 +362,7 @@
       <img src="assets/img/stack15.png" alt="">
       <img src="assets/img/stack16.png" alt="">
     </div>
-    <div class="col-stack lax" data-lax-preset="linger">
+    <div class="col-stack lax" data-lax-preset="eager">
       <img src="assets/img/stack4.png" alt="">
       <img src="assets/img/stack12.png" alt="">
       <img src="assets/img/stack13.png" alt="">
@@ -427,6 +427,11 @@
 
 </div>
 
+<!-- Back to top -->
+<a href="#" id="back-to-top">Back to top</a>
+
+<!-- <p class="subnav"><a href="#products">p1</a> <a href="#p2">p2</a> <a href="#p3">p3</a> <a href="#p4">p4</a></p> -->
+
   <!-- Footer -->
   <div class="footer footer-light">
     <div class="line-footer-gradient"></div>
@@ -485,7 +490,10 @@
   <!-- End Footer -->
 
   <!-- Import Js -->
-  <script src="assets/js/jquery.3.1.0.min.js"></script>
+  <!-- <script src="assets/js/jquery.3.1.0.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/jquery.smooth-scroll.js"></script>
+
   <!-- Autotype -->
   <script src="assets/js/typed.1.1.4.min.js"></script>
   <!-- Scroll Effect Lax -->
@@ -497,8 +505,33 @@
   <!-- Run scripts -->
   <script src="assets/js/script.js"></script>
   <!-- Local script -->
-  <script src="assets/js/autotype.js"></script>
   <script src="assets/js/functions.js"></script>
   <script src="assets/js/scriptheader.js"></script>
+  <script src="assets/js/functionsJquery.js"></script>
+
+  <script>
+  if ($('#back-to-top').length) {
+      var scrollTrigger = 100, // px
+          backToTop = function () {
+              var scrollTop = $(window).scrollTop();
+              if (scrollTop > scrollTrigger) {
+                  $('#back-to-top').addClass('show');
+              } else {
+                  $('#back-to-top').removeClass('show');
+              }
+          };
+      backToTop();
+      $(window).on('scroll', function () {
+          backToTop();
+      });
+      $('#back-to-top').on('click', function (e) {
+          e.preventDefault();
+          $('html,body').stop().animate({
+              scrollTop: 0
+          }, 700);
+      });
+  }
+  </script>
+
 </body>
 </html>
