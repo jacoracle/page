@@ -2247,12 +2247,10 @@ h3.text-js {
   text-decoration: none;
   text-align: center;
 }
-.menu-title:hover { }
 .menuL-dropdown {
   min-width: 100%;
   position: absolute;
   background-color: white;
-  // border-radius: 6px;
   z-index: 100;
   transition: .3s;
   box-shadow: 0 0 1.8rem rgba(0,0,0,.15);
@@ -2291,6 +2289,19 @@ h3.text-js {
 }
 .menuL-dropdown > *:hover {
   background: rgba(110,110,110,0.1);
+}
+.menuL-dropdown > li.dpA-active {
+  background: rgba(110,110,110,0.2);
+  pointer-events: none;
+}
+.menuL-dropdown > li.dpA-active:hover {
+  background: rgba(110,110,110,0.2);
+  pointer-events: none;
+}
+.menuL-dropdown > li.dpA-active a {
+  pointer-events: none;
+  cursor: default;
+  color: $violet;
 }
 .menuList:not(:hover) > .menuL-dropdown > * {
   visibility: hidden;

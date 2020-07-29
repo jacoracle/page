@@ -3069,6 +3069,22 @@ h3.text-js {
   background: rgba(110, 110, 110, 0.1);
 }
 
+.menuL-dropdown > li.dpA-active {
+  background: rgba(110, 110, 110, 0.2);
+  pointer-events: none;
+}
+
+.menuL-dropdown > li.dpA-active:hover {
+  background: rgba(110, 110, 110, 0.2);
+  pointer-events: none;
+}
+
+.menuL-dropdown > li.dpA-active a {
+  pointer-events: none;
+  cursor: default;
+  color: #4966f7;
+}
+
 .menuList:not(:hover) > .menuL-dropdown > * {
   visibility: hidden;
   height: 0;
