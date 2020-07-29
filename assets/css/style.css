@@ -597,6 +597,26 @@
     margin-top: 0;
   }
 }
+.row-grid-image .col-grid-image .col-gi3 {
+  position: relative;
+  width: 49%;
+  height: auto;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-grid-image .col-grid-image .col-gi3 {
+    width: 100%;
+  }
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-grid-image .col-grid-image .col-gi3:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+.row-grid-image .col-grid-image .col-gi3 img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 
 #headerIndicator {
   position: absolute;
