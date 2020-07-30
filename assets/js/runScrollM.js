@@ -14,10 +14,10 @@ for (let i=0; i<revealElements.length; i++) {
 // Agregar escenas para indicar punto de acción
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger1"})
   .setClassToggle("#plane", "movePlane")
-  .addIndicators({name: "1 - add a class"})
+  // .addIndicators({name: "1 - add a class"})
   .addTo(controller);
 
 var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger2"})
   .setClassToggle("#plane", "movePlane")
-  .addIndicators({name: "2 - remove a class"})
+  // .addIndicators({name: "2 - remove a class"})
   .addTo(controller);
