@@ -1323,22 +1323,27 @@ h3.text-js {
     padding-top: 20px;
     padding-bottom: 60px;
   }
-  .row-title {
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-    h2 {
-      color: white;
-      font-size: 48px;
-      font-weight: 700;
-      @include smartphone {
-        font-size: 36px;
-      }
+}
+.row-title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    @include smartphone {
+      font-size: 36px;
     }
+  }
+  h3 {
+    position: relative;
+    font-size: 38px;
+    font-weight: 700;
+    color: $violet;
   }
 }
 .body-dark {
