@@ -266,12 +266,12 @@
 }
 .header-page h2.title-page {
   position: relative;
-  width: 90%;
-  max-width: 800px;
+  width: 80%;
+  max-width: 700px;
   font-size: 40px;
   color: white;
   font-size: 80px;
-  line-height: 70px;
+  line-height: 60px;
   font-weight: 700;
   text-align: center;
   z-index: 1;
@@ -466,7 +466,6 @@
   bottom: 0;
   width: 500px;
   height: 384px;
-  background-image: url("../img/graphic_header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -478,6 +477,18 @@
     width: 300px;
     height: 230px;
   }
+}
+
+.hp-graphic1 {
+  background-image: url("../img/graphic_header.png");
+}
+
+.hp-graphic2 {
+  background-image: url("../img/graphic_header2.png");
+}
+
+.hp-graphic3 {
+  background-image: url("../img/graphic_header2.png");
 }
 
 .row-page {
@@ -746,6 +757,14 @@
   font-size: 24px;
 }
 
+.bgBlue {
+  background-color: #1a3d82;
+}
+
+.bgWhite {
+  background-color: white;
+}
+
 #headerIndicator {
   position: absolute;
   width: 100%;
@@ -963,11 +982,11 @@ section.RowscrollMagic {
   }
 }
 .noPaddingTop {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .paddingTop40 {
-  padding-top: 40px;
+  padding-top: 40px !important;
 }
 
 /*Import font*/
