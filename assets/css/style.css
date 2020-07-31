@@ -279,12 +279,12 @@
 @media (min-width: 0px) and (max-width: 680px) {
   .header-page h2.title-page {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 55px;
   }
 }
 .header-page h2.title-page span {
-  font-size: 50px;
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -524,20 +524,58 @@
   flex-direction: row;
   justify-content: space-around;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .col-brands {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  .col-brands {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
 .col-brands .brand {
   position: relative;
-  width: 240px;
+  width: 210px;
   height: auto;
   cursor: default;
 }
+@media (min-width: 0px) and (max-width: 680px) {
+  .col-brands .brand {
+    width: 190px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  .col-brands .brand {
+    width: 190px;
+    margin-top: 20px;
+  }
+}
 .col-brands .brand .brand-img {
   position: relative;
-  width: 240px;
-  height: 140px;
+  width: 210px;
+  height: 123px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: default;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .col-brands .brand .brand-img {
+    width: 190px;
+    height: 111px;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  .col-brands .brand .brand-img {
+    width: 190px;
+    height: 111px;
+  }
 }
 .col-brands .brand .brand-text {
   position: relative;
@@ -769,12 +807,16 @@ section.RowscrollMagic {
   position: relative;
   width: 500px;
   height: 500px;
-  border: 10px solid #e8ebef;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: circlecolor 5s linear infinite;
+  animation: circleborder 2s linear infinite;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .row-circle .circleI {
+    transform: scale(0.6);
+  }
 }
 .row-circle .circleI .circleIn {
   position: relative;
