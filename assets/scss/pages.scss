@@ -39,6 +39,16 @@
     }
   }
 }
+.header-nimbus {
+  background: #18bafb linear-gradient(95.24deg,#18bafb 0,#3d90e1 122.55%) !important;
+  flex-direction: column;
+  .nimbus-logo {
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin-bottom: 0px;
+  }
+}
 .btn-back{
   position: absolute;
   left: 12%;
@@ -94,8 +104,40 @@
 
   }
 }
+.mhScolor {
+  background: #11182b;
+}
 .miniheader-scrollActive {
   display: flex;
+}
+.btn-go {
+  position: relative;
+  width: auto;
+  height: 34px;
+  // background-color: rgba(255,255,255,.2);
+  background-color: $blue-nimbus-dark;
+  // border: 1px solid white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 4px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  box-shadow: $shadow;
+  transition: .3s;
+  cursor: pointer;
+  margin-top: 20px;
+  &:hover {
+    // background-color: rgba(255,255,255,.2);
+  }
+  .icon {
+    margin-left: 6px;
+    color: white;
+    font-size: 24px;
+  }
 }
 // Header animated
 .area {
@@ -708,4 +750,7 @@ section.RowscrollMagic {
 }
 .paddingTop40 {
   padding-top: 40px !important;
+}
+.line-height90 {
+  line-height: 90px !important;
 }

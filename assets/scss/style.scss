@@ -1220,14 +1220,14 @@ h3.text-js {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
-    opacity: .6;
+    opacity: .8;
     transition: .3s;
     display: flex;
     align-items: center;
-    pointer-events: none;
-    // &:hover {
-    //   opacity: 1;
-    // }
+    // pointer-events: none;
+    &:hover {
+      opacity: 1;
+    }
     .icon {
       color: #334ac0;
       font-size: 26px;

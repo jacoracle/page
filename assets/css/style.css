@@ -288,6 +288,17 @@
   font-weight: 700;
 }
 
+.header-nimbus {
+  background: #18bafb linear-gradient(95.24deg, #18bafb 0, #3d90e1 122.55%) !important;
+  flex-direction: column;
+}
+.header-nimbus .nimbus-logo {
+  position: relative;
+  width: 150px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
 .btn-back {
   position: absolute;
   left: 12%;
@@ -345,8 +356,37 @@
   font-weight: 600;
 }
 
+.mhScolor {
+  background: #11182b;
+}
+
 .miniheader-scrollActive {
   display: flex;
+}
+
+.btn-go {
+  position: relative;
+  width: auto;
+  height: 34px;
+  background-color: #1a3d82;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 4px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 6px 30px 30px rgba(23, 43, 77, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn-go .icon {
+  margin-left: 6px;
+  color: white;
+  font-size: 24px;
 }
 
 .area {
@@ -1005,6 +1045,10 @@ section.RowscrollMagic {
 
 .paddingTop40 {
   padding-top: 40px !important;
+}
+
+.line-height90 {
+  line-height: 90px !important;
 }
 
 /*Import font*/
@@ -2332,11 +2376,13 @@ h3.text-js {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: 0.3s;
   display: flex;
   align-items: center;
-  pointer-events: none;
+}
+.block-ti-text a:hover {
+  opacity: 1;
 }
 .block-ti-text a .icon {
   color: #334ac0;
