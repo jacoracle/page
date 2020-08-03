@@ -68,6 +68,9 @@
   text-decoration: none;
   box-shadow: $shadow;
   transition: .3s;
+  @include smartphone {
+    left: 6%;
+  }
   &:hover {
     background-color: rgba(255,255,255,.2);
   }
@@ -266,7 +269,7 @@
   background-image: url("../img/graphic_header3.png");
 }
 .hp-graphic4 {
-  background-image: url("../img/graphic_header2.png");
+  background-image: url("../img/graphic_header4.png");
 }
 .row-page {
   position: relative;
