@@ -462,7 +462,7 @@
 }
 .hp-graphic {
   position: absolute;
-  right: 7%;
+  right: 4%;
   bottom: 0;
   width: 500px;
   height: 384px;
@@ -488,6 +488,10 @@
 }
 
 .hp-graphic3 {
+  background-image: url("../img/graphic_header3.png");
+}
+
+.hp-graphic4 {
   background-image: url("../img/graphic_header2.png");
 }
 
@@ -755,6 +759,20 @@
   height: auto;
   color: white;
   font-size: 24px;
+}
+
+.col-image-100 {
+  position: relative;
+  width: 92%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.col-image-100 img {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .bgBlue {

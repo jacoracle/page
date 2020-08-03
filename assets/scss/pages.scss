@@ -200,7 +200,7 @@
 }
 .hp-graphic {
   position: absolute;
-  right: 7%;
+  right: 4%;
   bottom: 0;
   width: 500px;
   height: 384px;
@@ -221,6 +221,9 @@
   background-image: url("../img/graphic_header2.png");
 }
 .hp-graphic3 {
+  background-image: url("../img/graphic_header3.png");
+}
+.hp-graphic4 {
   background-image: url("../img/graphic_header2.png");
 }
 .row-page {
@@ -454,6 +457,19 @@
         }
       }
     }
+  }
+}
+.col-image-100 {
+  position: relative;
+  width: 92%;
+  max-width: $max-width;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  img {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 }
 .bgBlue {
