@@ -49,6 +49,7 @@
     margin-bottom: 0px;
   }
 }
+
 .btn-back{
   position: absolute;
   left: 12%;
@@ -233,6 +234,7 @@
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
 @keyframes animate {
     0%{
         transform: translateY(0) rotate(0deg);

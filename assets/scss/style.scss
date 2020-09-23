@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import 'icons.scss';
 @import 'pages.scss';
+@import 'soma.scss';
 
 /*Import font*/
 @font-face {
@@ -49,7 +50,6 @@ body {
   transition: .3s;
 }
 .body-light {
-  background-color: $body-light;
   background-color: white;
 }
 .body-dark {
@@ -146,14 +146,12 @@ strong {
   justify-content: center;
   align-items: center;
   transition: .3s;
-  box-shadow: 0 0 1.8rem rgba(0,0,0,.15);
+  border-bottom: 1px solid #d3d9dc;
   @include smartphone {
-    // position: fi;
   }
 }
 .navbar-light {
   background-color: $navbar-light;
-  // background-color: rgba(255,255,255,.4);
 }
 .navbar-dark {
   background-color: $navbar-dark;
@@ -1890,7 +1888,10 @@ h3.text-js {
       height: auto;
       border-radius: 6px;
       margin-top: 20px;
-      box-shadow: 0 0 1.8rem rgba(0,0,0,.15);
+      // box-shadow: 0 0 1.8rem rgba(0,0,0,.15);
+      // background-color: white;
+      background-color: #f9f9f9;
+      // border: 1px solid #f9f9f9;
       &:first-child{
           margin-top: 0px;
       }
@@ -2135,7 +2136,6 @@ h3.text-js {
     justify-content: center;
     border-radius: 8px;
     background: linear-gradient(91.14deg,#4966f7 0,#8253ff 122.55%);
-    box-shadow: $shadow;
     @include smartphone {
       width: 100%;
       height: 380px;
@@ -2209,6 +2209,15 @@ h3.text-js {
       }
     }
   }
+  .elementS0-soma {
+    background: #89c1da;
+    &:nth-child(2) {
+      background: $soma-color;
+    }
+    &:nth-child(3) {
+      background: #e2ab40;
+    }
+  }
 }
 .iSO1 {
   background-image: url("../img/so3.png");
@@ -2255,10 +2264,9 @@ h3.text-js {
 .menuL-dropdown {
   min-width: 100%;
   position: absolute;
-  background-color: white;
+  background-color: #edf1f3;
   z-index: 100;
   transition: .3s;
-  box-shadow: 0 0 1.8rem rgba(0,0,0,.15);
   li {
     position: relative;
     width: 100%;
