@@ -291,12 +291,62 @@
 .header-nimbus {
   background: #18bafb linear-gradient(95.24deg, #18bafb 0, #3d90e1 122.55%) !important;
   flex-direction: column;
+  align-items: flex-start;
 }
-.header-nimbus .nimbus-logo {
+@media (min-width: 0px) and (max-width: 680px) {
+  .header-nimbus {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  .header-nimbus {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.header-nimbus .col-header-nimbus {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .header-nimbus .col-header-nimbus {
+    width: 90%;
+    margin-left: 0;
+    margin-top: 10%;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  .header-nimbus .col-header-nimbus {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 8%;
+  }
+}
+.header-nimbus .col-header-nimbus .nimbus-logo {
   position: relative;
   width: 150px;
   height: auto;
   margin-bottom: 0px;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .header-nimbus .col-header-nimbus .nimbus-logo {
+    width: 90px;
+  }
+}
+.header-nimbus .col-header-nimbus h2 {
+  font-size: 60px;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .header-nimbus .col-header-nimbus h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
 }
 
 .btn-back {
@@ -1054,6 +1104,53 @@ section.RowscrollMagic {
 
 .line-height90 {
   line-height: 90px !important;
+}
+
+.screens {
+  position: absolute;
+  bottom: -80px;
+  right: 10%;
+  width: 760px;
+  height: auto;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .screens {
+    width: 400px;
+    bottom: 40px;
+    right: 4%;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  .screens {
+    width: 480px;
+    bottom: 40px;
+    right: 4%;
+  }
+}
+@media (min-width: 960px) and (max-width: 1300px) {
+  .screens {
+    right: 6%;
+    width: 600px;
+    bottom: -80px;
+  }
+}
+
+.row-image-full {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #171a40;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.row-image-full img {
+  position: relative;
+  width: 90%;
+  height: auto;
+  max-width: 1200px;
 }
 
 .header-soma {
