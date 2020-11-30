@@ -837,3 +837,15 @@ section.RowscrollMagic {
     max-width: 1200px;
   }
 }
+.row-video-constructor {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  video {
+    position: relative;
+    width: 700px;
+    height: auto;
+  }
+}

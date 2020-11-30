@@ -1153,6 +1153,19 @@ section.RowscrollMagic {
   max-width: 1200px;
 }
 
+.row-video-constructor {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.row-video-constructor video {
+  position: relative;
+  width: 700px;
+  height: auto;
+}
+
 .header-soma {
   position: relative;
   width: 100%;
@@ -2886,6 +2899,14 @@ h3.text-js {
   background-image: url("../img/logo_nimbus2.svg");
 }
 
+.brand-4 {
+  background-image: url("../img/banting.png");
+}
+
+.brand-5 {
+  background-image: url("../img/brighton.png");
+}
+
 .body-dark .block-clients .row-clients .brand-1 {
   background-image: url("../img/logo_educare_w.svg");
 }
@@ -3309,6 +3330,39 @@ h3.text-js {
   color: white;
 }
 
+.cci-circle-whats {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cci-circle-whats span {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/buss.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  .cci-circle-whats {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 680px) and (max-width: 960px) {
+  .cci-circle-whats {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* Main button style */
 .main-btn {
   position: relative;
@@ -3358,7 +3412,7 @@ h3.text-js {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 380px;
+  min-height: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3543,14 +3597,19 @@ h3.text-js {
   align-items: center;
   margin-top: 20px;
 }
+.social-row a {
+  text-decoration: none;
+}
 .social-row .icon {
   position: relative;
   font-size: 28px;
   transition: 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
 .social-row .icon:hover {
   color: #00bcd4;
+  text-decoration: none;
 }
 
 .line-footer {
@@ -4253,6 +4312,15 @@ h3.text-js {
 
 #content {
   height: 2000px;
+}
+
+.a-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.b-number {
+  font-size: 14px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
